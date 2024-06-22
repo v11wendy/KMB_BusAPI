@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMB Online App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>KMB Online App</h1>
+        <input type="text" id="searchBar" placeholder="Search Bus Route Number">
+    </header>
+    <main>
+        <section id="routeList">
+            <!-- Route list will be populated here -->
+        </section>
+        <section id="routeDetails" style="display: none;">
+            <button id="backButton">Back</button>
+            <div id="routeInfo"></div>
+            <div id="directionButtons">
+                <button id="outboundButton" class="directionButton">Outbound</button>
+                <button id="inboundButton" class="directionButton">Inbound</button>
+            </div>
+            <div id="stopsList"></div>
+        </section>
+    </main>
+    <div id="popup" class="popup">
+        <div id="popupContent"></div>
+        <span id="popupClose" class="popupClose">&times;</span>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
